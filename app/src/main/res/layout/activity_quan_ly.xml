@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3D0E0"
+    tools:context=".activity.QuanLyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarQuanLy"
+        app:title="Quản lý"
+        app:titleTextColor="@color/colortext"
+        android:background="#443647"
+        app:layout_constraintTop_toTopOf ="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/themsp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/baseline_add_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:id="@+id/ql_themkm"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/discount"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_ql"
+        app:layout_constraintTop_toBottomOf="@id/toolbarQuanLy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
